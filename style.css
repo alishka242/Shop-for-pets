@@ -1,0 +1,45 @@
+.called{
+    font-size: 25px;
+}
+
+.call{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+h1{
+    color: darkslategrey;
+}
+
+h2{
+    color: darkslategrey;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    padding: 0px 30px 0px 3px;
+}
+
+.catalog{
+    display: flex;
+    justify-content: center;
+}
+.home{font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+}
