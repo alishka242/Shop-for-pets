@@ -1,5 +1,118 @@
-.called{
-    font-size: 25px;
+/*general*/
+body{
+    background-color: #f8f8f8;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.firstList{
+    background: url(img/1cat_with_dog.jpg) no-repeat top scroll;
+    background-size: 100% auto;
+}
+
+.menu{
+    background-color: peachpuff;
+    border-bottom: 1px solid darkslategrey;
+    color: darkslategrey;
+    list-style: none;
+    text-transform: uppercase;
+    font: bold 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li{
+    padding: 0px 40px 0px 40px;
+    
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.home{font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    border-top: 1px solid darkslategrey;
+    color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 15px;
+}
+
+.indentation{
+    padding: 40px;
+}
+
+.feed{
+    outline: 1px solid black;
+}
+
+/*index*/
+.shopName{
+    font-size: 30px;
+    color: rgb(19, 157, 6);
+    background: none;
+}
+
+/*catalog*/
+.catalog{
+    display: flex;
+    justify-content: center;
+}
+
+.catalog a{
+    color: tomato;
+    text-decoration: underline;
+}
+
+.mono{
+    font-family: monospace;
+    color: blue;
+    text-decoration: underline;
+}
+
+.shortDescription{
+    font: 14px italic;
+    color: #707070;
+    line-height: 16px;
+}
+
+.fullDescription{
+    font: 16px 400;
+    color: #484343;
+    line-height: 24px;
+    text-align: left;
+}
+
+.characteristicsCat {
+    list-style-image: url(img/fish.png);
+}
+
+.characteristicsDog {
+    list-style-image: url(img/bone.png);
 }
 
 .call{
@@ -8,38 +121,15 @@
     justify-content: center;
 }
 
-body{
-    background-color: cornsilk;
+/*contacts*/
+.singInput{
+    width: 200px;
+    height: 20px;
+    color: rgb(186, 110, 45);
+    font-size: 16px;
 }
 
-h1{
-    color: darkslategrey;
-}
-
-h2{
-    color: darkslategrey;
-}
-
-.menu{
-    display: flex;
-    justify-content: center;
-}
-
-.menu li{
-    padding: 0px 30px 0px 3px;
-}
-
-.catalog{
-    display: flex;
-    justify-content: center;
-}
-.home{font-size: 25px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.contacts{
-    display: flex;
-    justify-content: center;
+textarea{
+    width: 500px;
+    height: 200px;
 }
