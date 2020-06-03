@@ -14,19 +14,23 @@ body{
     background-size: 100% auto;
 }
 
-.menu{
+.header{
     background-color: peachpuff;
     border-bottom: 1px solid darkslategrey;
-    color: darkslategrey;
-    list-style: none;
-    text-transform: uppercase;
-    font: bold 15px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0px;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header img{
+    height: 30px; 
+}
+
+.header_logo{
+    display: flex;
+    justify-content: flex-start;
 }
 
 a{
@@ -34,9 +38,34 @@ a{
     color: inherit;
 }
 
-.menu li{
+.header a:hover{
+    color: red;
+}
+
+.header a:focus{
+    color: grey;
+}
+
+.header li{
     padding: 0px 40px 0px 40px;
+    font-size: 18px;
+    color: darkslategrey;
+    list-style: none;
+    text-transform: uppercase;
     
+}
+
+.header_menu{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 h1, h2 {
@@ -53,7 +82,7 @@ h1, h2 {
     text-align: center;
 }
 
-footer{
+.footer{
     border-top: 1px solid darkslategrey;
     color: rgb(42, 42, 42);
     display: flex;
@@ -69,6 +98,8 @@ footer{
 .feed{
     outline: 1px solid black;
 }
+
+
 
 /*index*/
 .shopName{
@@ -119,6 +150,10 @@ footer{
     font-size: 25px;
     display: flex;
     justify-content: center;
+}
+
+.catalog a:hover{
+    color: green;
 }
 
 /*contacts*/

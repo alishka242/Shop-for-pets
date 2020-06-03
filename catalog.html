@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
@@ -7,31 +8,39 @@
 </head>
 
 <body>
-    <header>
-        <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог товара</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </header>
+    <div class="header">
+        <div class="header_logo">
+            <img src="img/logo.png" alt="logo">
+            <img src="img/logoText.png" alt="logoText">
+        </div>
+        <div class="menu">
+            <ul class="header_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a style="color: brown" href="catalog.html">Каталог товара</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
 
     <section class="indentation">
         <h2>Каталог</h2>
         <p class="home">Какой тип корма Вас интересует?<p>
-        <div class="catalog">
-            <div>
-                <img src="catalog/dog.png" height="100" alt="фото собаки"><br>
-                <a class="call" href="dogs.html">Для собак</a>
-            </div>
-            <div>
-                <img src="catalog/cat.png" height="100" alt="фото кошки"><br>
-                <a class="call" href="cats.html">Для кошек</a>
-            </div>
-        </div>
-        <br>
+                <div class="catalog">
+                    <div>
+                        <img src="catalog/dog.png" height="100" alt="фото собаки"><br>
+                        <a class="call" href="dogs.html">Для собак</a>
+                    </div>
+                    <div>
+                        <img src="catalog/cat.png" height="100" alt="фото кошки"><br>
+                        <a class="call" href="cats.html">Для кошек</a>
+                    </div>
+                </div>
+                <br>
     </section>
-    
-    <footer>
+
+    <div class="footer">
         <p>&copy; Все права защищены</p>
-    </footer>
-</body></html>
+    </div>
+</body>
+
+</html>

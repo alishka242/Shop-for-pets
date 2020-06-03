@@ -8,13 +8,19 @@
 </head>
 
 <body>
-    <header>
-        <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог товара</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </header>
+    <div class="header">
+        <div class="header_logo">
+            <img src="img/logo.png" alt="logo">
+            <img src="img/logoText.png" alt="logoText">
+        </div>
+        <div class="menu">
+            <ul class="header_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог товара</a></li>
+                <li><a style="color: brown" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
 
     <section>
         <form action="#">
@@ -22,7 +28,8 @@
             <p>Ваше имя <input class="singInput" type="text" placeholder="Введите свое имя"></p>
             <p>Ваш Email <input class="singInput" type="text" placeholder="Введите свою почту"></p>
             <p>Тема обращения <input class="singInput" type="text" placeholder="Введите тему"></p>
-            <p>Поле для ввода текста</p><textarea placeholder="Поле для Вашего обращения" name="appeal" id=""></textarea>
+            <p>Поле для ввода текста</p><textarea placeholder="Поле для Вашего обращения" name="appeal"
+                id=""></textarea>
             <p>Как оцените наш сайт от 0 до 10 <input class="singInput" type="text" placeholder="Число"></p>
             <br><br>
             <input type="submit" value="Отправиль"> <input type="reset" value="Сброс">
@@ -43,9 +50,9 @@
         </div>
     </section>
 
-    <footer>
+    <div class="footer">
         <p>&copy; Все права защищены</p>
-    </footer>
+    </div>
 </body>
 
 </html>
