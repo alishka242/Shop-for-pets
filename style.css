@@ -160,13 +160,26 @@ h1, h2 {
 .singInput{
     width: 200px;
     height: 20px;
-    color: rgb(186, 110, 45);
+    color: rgb(211, 112, 26);
     font-size: 16px;
+}
+
+input.singInput:focus{
+    color: rgb(50, 113, 14);
+    background-color: rgb(252, 225, 191);
 }
 
 textarea{
     width: 500px;
     height: 200px;
+    font-size: 16px;
+    color: rgb(211, 112, 26);
+}
+
+textarea:focus{
+    font-size: 16px;
+    color: rgb(50, 113, 14);
+    background-color: rgb(252, 225, 191);
 }
 
 .contacts_padding{
