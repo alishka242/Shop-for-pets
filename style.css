@@ -1,5 +1,5 @@
 /*general*/
-body{
+body {
     background-color: #f8f8f8;
     margin: 0px 0px 0px 0px;
     display: flex;
@@ -8,12 +8,12 @@ body{
     height: 100%;
 }
 
-.firstList{
+.firstList {
     background: url(img/1cat_with_dog.jpg) no-repeat top scroll;
     background-size: 100% auto;
 }
 
-.header{
+.header {
     background-color: peachpuff;
     border-bottom: 1px solid darkslategrey;
     height: 40px;
@@ -23,29 +23,29 @@ body{
     flex-wrap: nowrap;
 }
 
-.header img{
-    height: 30px; 
+.header img {
+    height: 30px;
 }
 
-.header_logo{
+.header_logo {
     display: flex;
     justify-content: flex-start;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.header a:hover{
+.header a:hover {
     color: red;
 }
 
-.header a:focus{
+.header a:focus {
     color: grey;
 }
 
-.header li{
+.header li {
     padding: 0px 70px 0px 70px;
     font-size: 18px;
     color: darkslategrey;
@@ -53,20 +53,21 @@ a{
     text-transform: uppercase;
 }
 
-.header_menu{
+.header_menu {
     display: flex;
     justify-content: center;
     align-self: center;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: black;
     text-align: center;
     font-size: 18px;
@@ -74,13 +75,14 @@ h1, h2 {
     background: #eaeaea;
 }
 
-.home{font-size: 25px;
+.home {
+    font-size: 25px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.footer{
+.footer {
     border-top: 1px solid darkslategrey;
     color: rgb(42, 42, 42);
     display: flex;
@@ -89,45 +91,43 @@ h1, h2 {
     font-size: 15px;
 }
 
-.indentation{
-    padding: 40px;
-}
-
-.feed{
-    outline: 1px solid black;
-}
-
 /*index*/
-.shopName{
+.shopName {
     font-size: 30px;
     color: rgb(19, 157, 6);
     background: none;
 }
 
+.table_index {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 30px 0px;
+}
+
 /*catalog*/
-.catalog{
+.catalog {
     display: flex;
     justify-content: center;
 }
 
-.catalog a{
+.catalog a {
     color: tomato;
     text-decoration: underline;
 }
 
-.mono{
+.mono {
     font-family: monospace;
     color: blue;
     text-decoration: underline;
 }
 
-.shortDescription{
+.shortDescription {
     font: 14px italic;
     color: #707070;
     line-height: 16px;
 }
 
-.fullDescription{
+.fullDescription {
     font: 16px 400;
     color: #484343;
     line-height: 24px;
@@ -148,56 +148,78 @@ h1, h2 {
     margin: 0px;
 }
 
-.call{
+.call {
     font-size: 25px;
     display: flex;
     justify-content: center;
 }
 
-.catalog a:hover{
+.catalog a:hover {
     color: green;
 }
 
-table{
+table {
     border: 1px solid black;
     height: 400px;
     width: 700px;
     border-collapse: collapse;
-    background-color:  peachpuff;;
+    background-color: peachpuff;
+    ;
 }
 
-td{
+td {
     border: 1px solid black;
     padding: 15px;
     text-align: left;
 }
 
+.indentation {
+    padding: 40px;
+}
+
+.indentation p:first-letter {
+    color: rgb(19, 157, 6);
+    font-size: 30px;
+
+}
+
+.feed {
+    outline: 5px solid rgb(19, 157, 6);
+}
+
+.feed:hover {
+    outline: 0px;
+}
+
 /*contacts*/
-textarea, .singInput{
+textarea,
+.singInput {
     width: 200px;
     height: 20px;
     color: rgb(211, 112, 26);
     font-size: 16px;
-}    
+}
 
-textarea:focus, input.singInput:focus{
+textarea:focus,
+input.singInput:focus {
     color: rgb(50, 113, 14);
     background-color: rgb(252, 225, 191);
 }
 
-textarea{
+textarea {
     width: 500px;
     height: 200px;
 }
 
-.contacts_padding{
+.contacts_padding {
     padding: 40px;
 }
 
-textarea:first-letter{
+textarea:first-letter {
     font-size: 20px;
 }
 
-.place_words, textarea{
+.place_words,
+textarea {
     text-transform: capitalize;
 }
