@@ -6,7 +6,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
 }
 
 .firstList{
@@ -47,12 +46,11 @@ a{
 }
 
 .header li{
-    padding: 0px 40px 0px 40px;
+    padding: 0px 70px 0px 70px;
     font-size: 18px;
     color: darkslategrey;
     list-style: none;
     text-transform: uppercase;
-    
 }
 
 .header_menu{
@@ -99,8 +97,6 @@ h1, h2 {
     outline: 1px solid black;
 }
 
-
-
 /*index*/
 .shopName{
     font-size: 30px;
@@ -140,10 +136,16 @@ h1, h2 {
 
 .characteristicsCat {
     list-style-image: url(img/fish.png);
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
 }
 
 .characteristicsDog {
     list-style-image: url(img/bone.png);
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
 }
 
 .call{
@@ -156,15 +158,29 @@ h1, h2 {
     color: green;
 }
 
+table{
+    border: 1px solid black;
+    height: 400px;
+    width: 700px;
+    border-collapse: collapse;
+    background-color:  peachpuff;;
+}
+
+td{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
 /*contacts*/
-.singInput{
+textarea, .singInput{
     width: 200px;
     height: 20px;
     color: rgb(211, 112, 26);
     font-size: 16px;
-}
+}    
 
-input.singInput:focus{
+textarea:focus, input.singInput:focus{
     color: rgb(50, 113, 14);
     background-color: rgb(252, 225, 191);
 }
@@ -172,16 +188,16 @@ input.singInput:focus{
 textarea{
     width: 500px;
     height: 200px;
-    font-size: 16px;
-    color: rgb(211, 112, 26);
-}
-
-textarea:focus{
-    font-size: 16px;
-    color: rgb(50, 113, 14);
-    background-color: rgb(252, 225, 191);
 }
 
 .contacts_padding{
     padding: 40px;
+}
+
+textarea:first-letter{
+    font-size: 20px;
+}
+
+.place_words, textarea{
+    text-transform: capitalize;
 }
