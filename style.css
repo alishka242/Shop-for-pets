@@ -1,35 +1,41 @@
 /*general*/
-body {
-    background-color: #f8f8f8;
-    margin: 0px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.firstList {
-    background: url(img/1cat_with_dog.jpg) no-repeat top scroll;
-    background-size: 100% auto;
-}
-
+/*header*/
 .header {
     background-color: peachpuff;
     border-bottom: 1px solid darkslategrey;
-    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 70px;
     margin: 0px;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
 }
 
-.header img {
-    height: 30px;
+.logo img {
+    height: 50px;
+    margin: 5px 0px 5px 20px;
+
 }
 
-.header_logo {
+.logo {
     display: flex;
     justify-content: flex-start;
+}
+
+.menu li {
+    padding: 0px 30px 0px 30px;
+    font-size: 18px;
+    color: darkslategrey;
+    list-style: none;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 a {
@@ -37,33 +43,28 @@ a {
     color: inherit;
 }
 
-.header a:hover {
+.menu a:hover {
     color: red;
 }
 
-.header a:focus {
+.menu a:focus {
     color: grey;
 }
 
-.header li {
-    padding: 0px 70px 0px 70px;
-    font-size: 18px;
-    color: darkslategrey;
-    list-style: none;
-    text-transform: uppercase;
+/*body*/
+body {
+    background-color: #f8f8f8;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
-.header_menu {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
+.conteiner{
+    width: 1400px;
+    height: 50px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 h1,
@@ -75,16 +76,12 @@ h2 {
     background: #eaeaea;
 }
 
-.home {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 
+/*footer*/
 .footer {
     border-top: 1px solid darkslategrey;
     color: rgb(42, 42, 42);
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -98,11 +95,12 @@ h2 {
     background: none;
 }
 
-.table_index {
-    display: flex;
-    justify-content: center;
-    margin: 0px 0px 30px 0px;
+.firstList {
+    background: url(img/1cat_with_dog.jpg) no-repeat top scroll;
+    background-size: 100% auto;
+    height: 100%;
 }
+
 
 /*catalog*/
 .catalog {
@@ -222,4 +220,27 @@ textarea:first-letter {
 .place_words,
 textarea {
     text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
