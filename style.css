@@ -61,46 +61,77 @@ body {
     
 }
 
-.conteiner{
-    width: 1400px;
-    height: 50px;
-    margin: 0 auto;
+html, body{
+    height: 100%;
 }
 
-h1,
+html {
+    overflow-y: scroll;
+}
+
+.conteiner{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(19, 157, 6);
+    background: none;
+    text-align: center;
+}
+
 h2 {
     color: black;
     text-align: center;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
     background: #eaeaea;
 }
 
 
+.information_list {
+    margin: 40px;
+}
+
+.information_list p:first-letter {
+    color: rgb(19, 157, 6);
+    font-size: 30px;
+    
+
+}
+
+/*content*/
+.content{
+    flex: 1 0 auto;
+}
+
 /*footer*/
 .footer {
     border-top: 1px solid darkslategrey;
-    color: rgb(42, 42, 42);
-    height: 100%;
+    color: rgb(220, 196, 181);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding: 5px 40px 5px 0px;
     align-items: flex-end;
-    font-size: 15px;
+    font-size: 16px;
+    flex: 0 0 auto;
+    height: 50px;
+    background-color: rgb(56, 51, 48);
+    border-top: 1px solid darkslategrey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /*index*/
-.shopName {
-    font-size: 30px;
-    color: rgb(19, 157, 6);
-    background: none;
-}
-
-.firstList {
+/*.firstList {
     background: url(img/1cat_with_dog.jpg) no-repeat top scroll;
     background-size: 100% auto;
     height: 100%;
 }
-
+*/
 
 /*catalog*/
 .catalog {
@@ -119,6 +150,23 @@ h2 {
     text-decoration: underline;
 }
 
+.buy{
+    margin: 60px;
+    font-size: 25px;
+    background-color: orange;
+    color: black;
+}
+
+.buy:hover{
+    background-color: green;
+    color: white;
+}
+
+.buy:focus{
+    background-color: #a5a5a5;
+    color: #f0f0f0;
+}
+
 .shortDescription {
     font: 14px italic;
     color: #707070;
@@ -132,18 +180,12 @@ h2 {
     text-align: left;
 }
 
-.characteristicsCat {
-    list-style-image: url(img/fish.png);
+.characteristics{
+    list-style-image: url(img/cat_dog.png);
     text-align: left;
     padding: 20px;
     margin: 0px;
-}
-
-.characteristicsDog {
-    list-style-image: url(img/bone.png);
-    text-align: left;
-    padding: 20px;
-    margin: 0px;
+    clear: both;
 }
 
 .call {
@@ -171,15 +213,6 @@ td {
     text-align: left;
 }
 
-.indentation {
-    padding: 40px;
-}
-
-.indentation p:first-letter {
-    color: rgb(19, 157, 6);
-    font-size: 30px;
-
-}
 
 .feed {
     outline: 5px solid rgb(19, 157, 6);
@@ -187,6 +220,11 @@ td {
 
 .feed:hover {
     outline: 0px;
+}
+
+.line_description{
+    float: left;
+    padding: 0px 70px 0px 0px;
 }
 
 /*contacts*/
@@ -207,10 +245,6 @@ input.singInput:focus {
 textarea {
     width: 500px;
     height: 200px;
-}
-
-.contacts_padding {
-    padding: 40px;
 }
 
 textarea:first-letter {
