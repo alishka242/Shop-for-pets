@@ -1,7 +1,7 @@
 /*general*/
 /*header*/
 .header {
-    background-color: peachpuff;
+    /*background-color: #ffdab9;*/
     border-bottom: 1px solid darkslategrey;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -10,12 +10,15 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    background-image: url(img/paw4.jpg);
 }
 
 .logo img {
     height: 50px;
     margin: 5px 0px 5px 20px;
-
+    border: 1px solid rgb(111, 4, 4);
+    border-radius: 5px;
+    background-color: wheat;
 }
 
 .logo {
@@ -30,9 +33,18 @@
     list-style: none;
     text-transform: uppercase;
     display: inline;
+    border: lightcyan;
+    background-color: white;
+    margin: 0px 30px 0px 30px;
+    border: 1px solid rgb(111, 4, 4);
+    border-radius: 5px;
 }
 
-.menu{
+.menu li:hover {
+    background-color: wheat;
+}
+
+.menu {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -58,10 +70,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
@@ -69,12 +82,17 @@ html {
     overflow-y: scroll;
 }
 
-.conteiner{
+.conteiner {
     width: 1400px;
     margin: 0 auto;
     display: flex;
-	flex-direction: column;
-	min-height: 100%;
+    flex-direction: column;
+    min-height: 100%;
+    background-image: url(img/4cat_with_dog.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
 }
 
 h1 {
@@ -99,12 +117,12 @@ h2 {
 .information_list p:first-letter {
     color: rgb(19, 157, 6);
     font-size: 30px;
-    
+
 
 }
 
 /*content*/
-.content{
+.content {
     flex: 1 0 auto;
 }
 
@@ -126,12 +144,12 @@ h2 {
 }
 
 /*index*/
-/*.firstList {
-    background: url(img/1cat_with_dog.jpg) no-repeat top scroll;
-    background-size: 100% auto;
-    height: 100%;
+.home {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-*/
 
 /*catalog*/
 .catalog {
@@ -140,8 +158,35 @@ h2 {
 }
 
 .catalog a {
-    color: tomato;
+    color: rgb(228, 2, 2);
     text-decoration: underline;
+}
+
+.watch_catalog {
+    border: 1px solid black;
+    float: left;
+    width: 180px;
+    text-align: center;
+    margin: 0px 20px;
+    padding: 5px;
+}
+
+.watch_catalog p {
+    all: inherit;
+}
+
+.watch_catalog:hover {
+    background-color: rgb(255, 131, 109);
+}
+
+.watch_catalog_center {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.catalog div:hover {
+    background-color: wheat;
 }
 
 .mono {
@@ -150,19 +195,19 @@ h2 {
     text-decoration: underline;
 }
 
-.buy{
+.buy {
     margin: 60px;
     font-size: 25px;
     background-color: orange;
     color: black;
 }
 
-.buy:hover{
+.buy:hover {
     background-color: green;
     color: white;
 }
 
-.buy:focus{
+.buy:focus {
     background-color: #a5a5a5;
     color: #f0f0f0;
 }
@@ -180,7 +225,7 @@ h2 {
     text-align: left;
 }
 
-.characteristics{
+.characteristics {
     list-style-image: url(img/cat_dog.png);
     text-align: left;
     padding: 20px;
@@ -192,6 +237,17 @@ h2 {
     font-size: 25px;
     display: flex;
     justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.call img {
+    height: 120px;
+}
+
+.catalog_call {
+    margin: 10px;
 }
 
 .catalog a:hover {
@@ -222,7 +278,7 @@ td {
     outline: 0px;
 }
 
-.line_description{
+.line_description {
     float: left;
     padding: 0px 70px 0px 0px;
 }
@@ -256,25 +312,7 @@ textarea {
     text-transform: capitalize;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.home {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.map {
+    border: 1px solid rgb(236, 182, 82);
+    margin: 20px;
 }
